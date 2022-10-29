@@ -248,3 +248,16 @@ This repository is focused on MLOps.  To see more about Data Storytelling, you c
 * [Cloud Data Engineering](https://www.coursera.org/learn/cloud-data-engineering-duke?specialization=building-cloud-computing-solutions-at-scale)
 * [Cloud Machine Learning Engineering and MLOps](https://www.coursera.org/learn/cloud-machine-learning-engineering-mlops-duke?specialization=building-cloud-computing-solutions-at-scale)
 
+
+### test with docker-compose, tell from the command history
+
+    1  curl http://0.0.0.0:8080/
+    2  docker-compose stop
+    3  docker stop $(docker ps -aq)
+    4  docker rm $(docker ps -aq)
+    5  docker-compose up -d 
+    6  docker ps
+    7  docker-compose stop
+    8  docker image ls
+    
+
